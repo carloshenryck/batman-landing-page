@@ -448,6 +448,10 @@
 }
 
 .footer-top-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   font-family: var(--font-heading);
   font-size: 16px;
   letter-spacing: 1.6px;
@@ -460,6 +464,11 @@
   transition:
     background-color 0.25s ease,
     color 0.25s ease;
+}
+
+.footer-top-btn svg {
+  position: relative;
+  top: -2px;
 }
 
 .footer-top-btn:hover {

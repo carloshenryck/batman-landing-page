@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { ArrowUp } from "lucide-react";
 import { EASE } from "../lib/motion";
 import { scrollToTop } from "../lib/scroll";
 
@@ -30,7 +31,8 @@ export function Footer() {
         </blockquote>
         <p className="footer-author">Bruce Wayne · Batman Begins, 2005</p>
         <button type="button" className="footer-top-btn" onClick={scrollToTop}>
-          VOLTAR AO TOPO <span aria-hidden="true">↑</span>
+          VOLTAR AO TOPO{" "}
+          <ArrowUp size={16} strokeWidth={2.5} aria-hidden="true" />
         </button>
       </motion.div>
     </footer>
